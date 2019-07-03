@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Проект "Геоотзыв". Яндекс Карты</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=389cc6a5-d993-4d5e-bf40-0dfb9f98d258&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <section id="map">
+        <div class="infobox is-hidden">
+            <div class="infobox__head">
+                <h1 class="infobox__address">Адрес</h1>
+                <button type="button" class="btn btn--close" title="Закрыть">Закрыть</button>
+            </div>
+            <div class="infobox__body">
+                <ul class="infobox__list">
+                    <li class="infobox__item">Отзывов пока нет</li>
+                    <!-- <li class="infobox__item">
+                        <article class="feedback">
+                            <span class="feedback__username">svetlana</span>
+                            <h2 class="feedback__title">Шоколадница</h2>
+                            <time datetime="2015-12-13" class="feedback__time">13.12.2015</time>
+                            <p class="feedback__text">Очень хорошее место!</p>
+                        </article>
+                    </li>
+                    <li class="infobox__item">
+                        <article class="feedback">
+                            <span class="feedback__username">Сергей Мелюков</span>
+                            <h2 class="feedback__title">Красный куб</h2>
+                            <time datetime="2015-12-12" class="feedback__time">12.12.2015</time>
+                            <p class="feedback__text">Ужасное место! Кругом зомби!!!!</p>
+                        </article>
+                    </li> -->
+                </ul>
+                <div class="infobox__form">
+                    <form class="form" id="feedback-form" name="feedbackForm">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Ваш отзыв</legend>
+                            <div class="form__field">
+                                <input type="text" class="form__textfield" placeholder="Ваше имя" name="username" maxlength="256" required>
+                            </div>
+                            <div class="form__field">
+                                <input type="text" class="form__textfield" placeholder="Укажите место" name="place" maxlength="256" required>
+                            </div>
+                            <div class="form__field">
+                                <textarea class="form__textfield form__textfield--textarea" placeholder="Поделитесь впечатлениями" name="usermsg" maxlength="256" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--submit" name="submit-btn">Добавить</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="./js/map-script.js"></script>
+
+</html>
