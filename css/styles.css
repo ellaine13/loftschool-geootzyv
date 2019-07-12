@@ -61,16 +61,14 @@ body {
 /* INFOBOX */
 .infobox {
 	position: absolute;
-	/* top: 50%; */
-	top: 75px;
-	left: 11.333333em;
+	top: 50%;
+	left: 4em;
 	display: block;
 	width: 25.2666666em;
+	margin-top: -213px;
 	font-family: 'Fira Sans', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 15px;
-	/* -webkit-transform: translateY(-50%); */
-	/* transform: translateY(-50%); */
 	z-index: 9;
 }
 
@@ -131,6 +129,10 @@ body {
 
 .infobox__item:last-child {
 	margin: 0;
+}
+
+.infobox__list.is-filled .infobox__item--temporary {
+	display: none;
 }
 
 .infobox__form {
@@ -209,7 +211,7 @@ body {
 }
 
 .feedback__username {
-	margin-right: 5px;
+	margin-right: 9px;
 	font-weight: 500;
 	font-size: 1.0666666em;
 	color: #4f4f4f;
@@ -217,7 +219,7 @@ body {
 
 .feedback__title {
 	display: inline-block;
-	margin: 0;
+	margin: 0 4px 0 0;
 	letter-spacing: .04em;
 	font-weight: 400;
 	font-size: 1em;
